@@ -1,0 +1,27 @@
+// swift-tools-version:5.5
+import PackageDescription
+
+let package = Package(
+    name: "CLibssh2",
+    products: [
+        .library(name: "CLibssh2", targets: ["CLibssh2"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/swlfigo/openssl-spm", from: "4.0.3"),
+    ],
+    targets: [
+        .target(
+            name: "CLibssh2",
+            dependencies: [
+                "libssh2",
+                .product(name: "OpenSSL", package: "openssl-spm"),
+            ],
+            path: "Source/CLibssh2"
+        ),
+        .binaryTarget(
+            name: "libssh2",
+            url: "__DOWNLOAD_URL__",
+            checksum: "__CHECKSUM__"
+        ),
+    ]
+)
