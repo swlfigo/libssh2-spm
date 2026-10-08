@@ -16,7 +16,8 @@ let package = Package(
                 "libssh2",
                 .product(name: "OpenSSL", package: "openssl-spm"),
             ],
-            path: "Source/CLibssh2"
+            path: "Source/CLibssh2",
+            publicHeadersPath: "include"
         ),
         .binaryTarget(
             name: "libssh2",

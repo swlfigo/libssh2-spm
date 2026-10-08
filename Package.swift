@@ -16,12 +16,13 @@ let package = Package(
                 "libssh2",
                 .product(name: "OpenSSL", package: "openssl-spm"),
             ],
-            path: "Source/CLibssh2"
+            path: "Source/CLibssh2",
+            publicHeadersPath: "include"
         ),
         .binaryTarget(
             name: "libssh2",
-            url: "https://github.com/swlfigo/libssh2-spm/releases/download/storage.1.11.100/libssh2.xcframework.zip",
-            checksum: "cb4d5825e6b15c49e622e59860e6ab0716cf1b20244d1361e718c41b42377f90"
+            url: "https://github.com/swlfigo/libssh2-spm/releases/download/storage.1.11.101/libssh2.xcframework.zip",
+            checksum: "4a0814533866e388b50ab9f071b2d968198c19f8825b638ea6705c44c20582fc"
         ),
     ]
 )

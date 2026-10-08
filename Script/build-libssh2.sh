@@ -33,5 +33,4 @@ LIB=$(find "$BDIR" -name 'libssh2*.a' | head -1)
 [ -n "$LIB" ] || { echo "[!] libssh2.a not produced"; exit 1; }
 cp "$LIB" "$DEST/lib/libssh2.a"
 cp "$SOURCE_DIR"/include/*.h "$DEST/include/"
-cp "$HERE/Source/module.modulemap" "$DEST/include/module.modulemap"
 lipo -info "$DEST/lib/libssh2.a"

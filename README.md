@@ -6,7 +6,7 @@ Crypto backend is OpenSSL, **not bundled**: it links against [`swlfigo/openssl-s
 ## Usage
 
 ```swift
-.package(url: "https://github.com/swlfigo/libssh2-spm", from: "1.11.100"),
+.package(url: "https://github.com/swlfigo/libssh2-spm", from: "1.11.101"),
 // target dependency:
 .product(name: "CLibssh2", package: "libssh2-spm"),
 ```

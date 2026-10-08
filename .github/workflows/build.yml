@@ -13,7 +13,7 @@ env:
   # (CVE-2026-55200, upstream commit 97acf3df). Pin a master commit that contains it.
   # To roll forward: change LIBSSH2_PIN and bump PACKAGE_VERSION.
   LIBSSH2_PIN: 18aebe08962c1878d84c373ad85caff25ec67771
-  PACKAGE_VERSION: 1.11.100
+  PACKAGE_VERSION: 1.11.101
   # Fallback only; the job resolves the latest openssl-spm storage release when possible.
   OPENSSL_STORAGE_TAG: storage.4.0.3
 

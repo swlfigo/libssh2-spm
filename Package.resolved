@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OpenSSL",
+        "repositoryURL": "https://github.com/swlfigo/openssl-spm",
+        "state": {
+          "branch": null,
+          "revision": "57f0ee899542c87049a33bd2c5d4cf4716b03ed5",
+          "version": "4.0.3"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
